@@ -3,7 +3,7 @@
 
 body {
 font: normal normal 13px/16px "Open Sans", sans-serif;
-background: #dfdfdf;
+background: #ff7675;
 }
 
 .container {
@@ -11,8 +11,10 @@ padding: 20px;
 width: 300px;
 margin: 0 auto;
 margin-top: 40px;
-background: white;
+background-color: #2d3436;
+color: white;
 border-radius: 5px;
+border-style: solid;
 }
 
 form {
