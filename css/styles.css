@@ -66,10 +66,3 @@ li:hover{
 display: none;
 }
 
-li>crossOutButton {
-background: none;
-border: none;
-float: right;
-color: #025f70;
-font-weight: 800;
-}
