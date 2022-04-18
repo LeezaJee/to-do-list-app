@@ -1,9 +1,7 @@
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
-
 body {
-font: normal normal 13px/16px "Open Sans", sans-serif;
 background: #ff7675;
+font-family: 'Ms Madi', cursive;
+font-size: 24px;
 }
 
 .container {
@@ -17,6 +15,7 @@ border-radius: 5px;
 border-style: solid;
 }
 
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 form {
 display: inline-block;
 }
@@ -29,6 +28,8 @@ padding: 4px 15px 4px 5px;
 display: inline-block;
 background-color: #fc999b;
 color: #ffffff;
+font-family: 'Ms Madi', cursive;
+font-size: 20px;
 border-radius: 5px;
 text-align: center;
 margin-top: 2px;
