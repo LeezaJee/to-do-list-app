@@ -1,37 +1,24 @@
-function newItem() {
+$("#todoForm").on("submit", function (e) {
+    e.preventDefault();
 
-    //adding a new item to the list 
-    let li = $('<li></li>');
-    let inputValue = $('#input').val();
-    li.append(inputValue);
+    const value = e.currentTarget.todoItem.value;
 
-    if (inputValue === '') {
-        alert("You must write something!");
-    } else {
-        $('#list').append(li);
-    }
+    const li = $("<li><span>" + value + "</span></li>");
 
-    //crossing out an item from the list 
-    function crossOut() {
-        li.toggleClass('strike');
-    }
+    const delBtn = $("<span class='del'>x</span>");
 
-    li.on('dblclick', function crossOut() {
-		li.toggleClass('strike');
-	});
+    li.append(delBtn);
 
-    //adding the delete button "X"
-    let crossOutButton = $('<crossOutButton></crossOutButton>');
+    li.dblclick(function () {
+        $(this).toggleClass("strike");
+    });
 
-    crossOutButton.append(document.createTextNode('X'));
-    li.append(crossOutButton);
-    crossOutButton.on('click', deleteListItem);
+    delBtn.click(function() {
+        li.addClass("delete");
+    });
 
-    //adding class 'delete' (display: none) from the CSS
-    function deleteListItem() {
-        li.addClass('delete')
-    }
-    //reordering the items
-    $('#list').sortable();
+    $("#list").append(li);
+    this.reset();
+});
 
-}
+$("#list").sortable();
