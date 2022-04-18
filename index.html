@@ -15,8 +15,9 @@
 		<h2 class="heading">To Do List App</h2>
 		<p>Double click to mark an item off, click on "x" to delete an item, and drag items to reorder.</p>
        
-		<form name="toDoList">
-			<input type="text" name="ListItem" id="input"/>
+		<form id="todoForm" name="toDoList">
+			<input type="text" name="todoItem" id="input"/>
+			<button type="submit" id="button">Add</button>
 		</form>
     
 		<div onclick="newItem()" id="button">Add</div>
