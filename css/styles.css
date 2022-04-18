@@ -45,13 +45,13 @@ ol {
 padding-left: 20px;
 }
 
-ol li {
-padding: 5px;
-color: #000;
+ol li::marker{
+color: white;
 }
 
-ol li:nth-child(even) {
-background: #dfdfdf;
+ol li {
+  padding: 5px;
+  color: white;
 }
 
 .strike {
