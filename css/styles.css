@@ -20,8 +20,13 @@ form {
 display: inline-block;
 }
 
-input{
-padding: 4px 15px 4px 5px;
+#input::marker {
+color: white;
+}
+
+#input{
+padding: 7px;
+border-color: white;
 }
 
 #button {
