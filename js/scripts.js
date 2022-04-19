@@ -3,6 +3,11 @@ $("#todoForm").on("submit", function (e) {
 
     const value = e.currentTarget.todoItem.value;
 
+    if (value === "") {
+        alert("Please type in something!") + preventDefault(); 
+    } 
+    
+
     const li = $("<li><span>" + value + "</span></li>");
 
     const delBtn = $("<span class='del'>x</span>");
